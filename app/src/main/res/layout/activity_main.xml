@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/num1EditTextid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:hint="@string/edittext1"
+        android:background="@color/num1color"
+        android:textStyle="bold" ></EditText>
+
+    <EditText
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:id="@+id/num2EditTextid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:hint="@string/edittext2"
+        android:background="@color/num2color"
+        android:textStyle="bold" ></EditText>
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="30sp"
+            android:onClick="addFunction"
+            android:id="@+id/addBtnid"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="30sp"
+            android:onClick="subFunction"
+            android:id="@+id/subBtnid"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="30sp"
+            android:onClick="mulFunction"
+            android:id="@+id/mulBtnid"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="30sp"
+            android:onClick="divFunction"
+            android:id="@+id/divBtnid"/>
+
+    </LinearLayout>
+<TextView
+android:gravity="center"
+android:id="@+id/resultTextviewID"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="28sp"
+android:hint="@string/TextviewText"
+android:textStyle="bold" ></TextView>
+
+    </LinearLayout>
